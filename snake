@@ -1,0 +1,32 @@
+* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int x= sc.nextInt();
+		int total=x-1;
+		int value=1;
+		for(int i=0;i<x;i++){
+			int total=x-1-i;
+			for(int j=0;j<x+x-1;j++){
+				if(j==total){
+					System.out.print(value);
+					value++;
+					total++;
+					
+				}
+				else{
+					System.out.print("");
+				}
+			}
+			System.out.println(" ");
+		}
+	}
+}
